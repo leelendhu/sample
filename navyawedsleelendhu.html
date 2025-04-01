@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Website</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+        }
+        .image-container {
+            text-align: center;
+            position: relative;
+        }
+        .image-container img {
+            width: 80%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .rsvp-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #ff4b5c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .rsvp-button:hover {
+            background-color: #e04353;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="background.jpg" alt="Displayed Image"> <!-- Replace with your image -->
+        <button class="rsvp-button" onclick="window.location.href='rsvp.html'">RSVP</button>
+        <p>Welcome to my website with an image!</p>
+    </div>
+</body>
+</html>
